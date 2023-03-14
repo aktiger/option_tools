@@ -49,6 +49,7 @@ prob_cone = pd.DataFrame.from_dict(qdic)
 prob_cone.index = bin
 prob_cone
 prob_cone.T.plot(figsize=(12,6))
+plt.show()
 
 
 
