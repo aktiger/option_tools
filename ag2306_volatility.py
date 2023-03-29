@@ -26,7 +26,7 @@ df["hv_66"] = df["std_66"] * np.sqrt(252)
 df_cp = df.dropna()
 #print(df_cp)
 print(df_cp.tail(20))
-fig11 = df_cp.iloc[-120:,5:].set_index(df_cp["date"]).plot()  #-120，表示从最后一行开始往前数120行。4：表示从第4列开始，也就是hv_22
+fig11 = df_cp.iloc[-252:,5:].set_index(df_cp["date"]).plot()  #-120，表示从最后一行开始往前数120行。4：表示从第4列开始，也就是hv_22
 
 fig11.show()
 bin = [0,20,40,60,80,100]
