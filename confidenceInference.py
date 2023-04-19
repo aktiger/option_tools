@@ -15,4 +15,5 @@ def fullInterval(initPrice, N_sigma, volatility, leftTime, yearDay):
 
 
 if __name__ == '__main__':
-    print(fullInterval(5600, 1.95, 0.13, 30, 252))
+    print(fullInterval(float(sys.argv[1]),float(sys.argv[2]),float(sys.argv[3]),float(sys.argv[4]),float(sys.argv[5])))
+
