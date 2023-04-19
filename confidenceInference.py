@@ -20,7 +20,7 @@ def fullIntervalWithProb(initPrice, prob, volatility, leftTime, yearDay):
     return "[" + str(calPriceIntervalNegative(initPrice, N_sigma, volatility, leftTime, yearDay)) + "," + \
            str((calPriceIntervalPositive(initPrice, N_sigma, volatility, leftTime, yearDay))) + "]"
 
-
+# python confidenceInference.py Prob 5600 0.86638 0.21 30 252 22
 if __name__ == '__main__':
     if (sys.argv[1]=="nsig"):
         print(fullIntervalWithNSigma(float(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]),
@@ -29,5 +29,5 @@ if __name__ == '__main__':
         print(fullIntervalWithProb(float(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]),
                                  float(sys.argv[6])))
     else:
-        print("error input")
+        print("error input " + sys.argv[1])
 
