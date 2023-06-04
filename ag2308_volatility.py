@@ -3,7 +3,7 @@ import numpy as np
 
 pd.options.plotting.backend = "plotly"
 #从csv文件获取数据
-data = pd.read_csv('ag2306.csv', sep='\s+')
+data = pd.read_csv('ag2308.csv', sep='\s+')
 pd.set_option('display.max_rows',None)
 pd.set_option('display.max_columns',None)
 #print(type(data))
